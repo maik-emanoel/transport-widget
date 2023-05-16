@@ -5,8 +5,8 @@ toggleTheme.addEventListener('click', () => {
 
     html.classList.toggle('dark')
     if(html.classList.contains('dark')) {
-        toggleTheme.innerHTML = `<img src="../src/assets/sun.svg" alt="Ícone do sol" class="w-[20px]">`
+        toggleTheme.innerHTML = `<img src="./src/assets/sun.svg" alt="Ícone do sol" class="w-[20px]">`
     } else {
-        toggleTheme.innerHTML = `<img src="../src/assets/moon.svg" alt="Ícone da lua" class="w-[20px]">`
+        toggleTheme.innerHTML = `<img src="./src/assets/moon.svg" alt="Ícone da lua" class="w-[20px]">`
     }
 })
