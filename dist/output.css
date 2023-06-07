@@ -596,18 +596,6 @@ html {
   width: fit-content;
 }
 
-.w-\[\] {
-  width: ;
-}
-
-.w-\[80\] {
-  width: 80;
-}
-
-.w-\[80\%\] {
-  width: 80%;
-}
-
 .max-w-\[795px\] {
   max-width: 795px;
 }
@@ -640,10 +628,6 @@ html {
 
 .items-center {
   align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
 }
 
 .justify-between {
@@ -860,6 +844,10 @@ html {
   color: #ffffffda;
 }
 
+:is(.dark .hover\:dark\:fill-\[\#864293\]):hover {
+  fill: #864293;
+}
+
 @media (max-width: 795px) {
   .md\:left-\[50\%\] {
     left: 50%;
@@ -899,16 +887,6 @@ html {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-
-  .md\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
-  .md\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
 }
 
 @media (max-width: 425px) {
@@ -916,44 +894,20 @@ html {
     height: 2.5rem;
   }
 
-  .sm\:w-\[80\%\] {
-    width: 80%;
-  }
-
   .sm\:w-6 {
     width: 1.5rem;
+  }
+
+  .sm\:w-\[80\%\] {
+    width: 80%;
   }
 
   .sm\:gap-0 {
     gap: 0px;
   }
 
-  .sm\:gap-2 {
-    gap: 0.5rem;
-  }
-
   .sm\:gap-3 {
     gap: 0.75rem;
-  }
-
-  .sm\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .sm\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .sm\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
-  .sm\:text-lg\/tight {
-    font-size: 1.125rem;
-    line-height: 1.25;
   }
 
   .sm\:text-3xl\/tight {
@@ -961,19 +915,14 @@ html {
     line-height: 1.25;
   }
 
-  .sm\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-
-  .sm\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
   .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .sm\:text-lg\/tight {
+    font-size: 1.125rem;
+    line-height: 1.25;
   }
 
   .sm\:placeholder\:text-base::-moz-placeholder {
@@ -984,13 +933,5 @@ html {
   .sm\:placeholder\:text-base::placeholder {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .sm\:placeholder\:text-\[\]::-moz-placeholder {
-    color: ;
-  }
-
-  .sm\:placeholder\:text-\[\]::placeholder {
-    color: ;
   }
 }
